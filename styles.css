@@ -58,15 +58,15 @@ a { color: #777; }
   display: flex;
   justify-content: center;
   gap: 20px;
+  font-size: 16px;
   padding: 20px 20px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
 }
 
 .navbar a {
   text-decoration: none;
   color: #444;
-  font-size: 16px;
   /* letter-spacing: 1px; */
   text-transform: uppercase;
   transition: color 0.3s ease;
@@ -284,6 +284,11 @@ a { color: #777; }
 
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    gap: 15px;
+    font-size: 16px;
+  }
+
   .countdown {
     gap: 10px;
   }
