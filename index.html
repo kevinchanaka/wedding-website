@@ -10,15 +10,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap"
     rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <script src="script.js"></script>
 
 <body class="base">
-  <div class="container" style="text-align: center; font-size: 30px">
-    <h1>Kevin & Ranli</h1>
-    <h4>21st October 2026</h4>
-    <h4>Colombo, Sri Lanka</h4>
+  <div style="text-align: center; font-size: 28px">
+    <h1 class="heading">Kevin & Ranli</h1>
+    <h4>21st October 2026<br />
+      Colombo, Sri Lanka</h4>
   </div>
   <div>
     <nav class="navbar">
@@ -30,11 +31,49 @@
     </nav>
 
     <div style="margin-top: 50px; display: flex; justify-content: center;">
-      <img src="assets/kevin-and-ranli-photo.jpg" style="max-width: 80%; height: auto;">
+      <img class="image-scaled" src="assets/kevin-and-ranli-proposal.jpg">
+    </div>
+
+    <div style="margin-top: 50px; display: flex; justify-content: center;">
+      <img class="image-scaled" src="assets/kevin-and-ranli-bridge.jpg">
     </div>
 
     <section class="info-section">
-      <h2>Countdown to "I Do"</h2>
+      <h2 class="heading">Our Story</h2>
+      <p class="subtitle">
+        How it all began ❤️
+      </p>
+
+      <div class="content-block" style="text-align: center;">
+        <p>
+          Ours is a modern day love story, the kind that begins unexpectedly
+          and quickly feels like it was always meant to be.<br /><br />
+          We met in the most ordinary way, but from the very first date in Surry Hills, nothing felt ordinary at all.
+          We sat and talked for hours, completely losing track of time, as if the outside world did not exist.
+          What started as curiosity turned into comfort, laughter, and that quiet feeling of knowing.<br /><br />
+          After wandering through an arcade like two teenagers, we ended the night over laksa. Somewhere between
+          noodles and nervous smiles, we decided life was too short to wait.<br /><br />
+          That was the night I asked Ranli to be my girlfriend.<br /><br />
+          Since then, we have not stopped meeting every Thursday. Our little tradition, our constant in the week,
+          our reminder that love does not have to be complicated.
+          Sometimes it is just choosing each other again and again.<br /><br />
+          And we still do ❤️<br /><br />
+          One day, what I thought was just another city date turned into the next chapter. Kevin insisted we walk
+          through the Botanic Gardens (on the hottest day!) and I had absolutely no idea why.
+          That is how steady our love has always felt. Until he got down on one knee.<br /><br />
+          And just like that, we began our forever.
+          We cannot wait to celebrate this next chapter with all of you ❤️<br />
+        </p>
+      </div>
+
+      <div style="margin-top: 30px; display: flex; justify-content: center;">
+        <img src="assets/locket.png" style="max-width: 80%; height: auto;">
+      </div>
+
+    </section>
+
+    <section class="info-section">
+      <h2 class="heading">Countdown to "I Do"</h2>
       <p class="subtitle">
         The big day is getting closer ✨
       </p>
@@ -57,15 +96,16 @@
           <p>Seconds</p>
         </div>
       </div>
+
+      <div style="margin-top: 40px; text-align: center;">
+        <h2 class="heading" style="font-size: 20px;">Come join us!<br /><br />Please RSVP below by 31st July</h2>
+        <!-- <a target="_blank" href="https://forms.gle/yTFwVLuy3aHagQMg7" class="rsvp-button">RSVP</a> -->
+        <a target="_blank" href="https://withjoy.com/kevin-and-ranli/rsvp" class="rsvp-button">RSVP</a>
+      </div>
     </section>
 
-    <div style="margin-top: 40px; text-align: center;">
-      <h2>Come join us! Please RSVP below</h2>
-      <a target="_blank" href="https://forms.gle/yTFwVLuy3aHagQMg7" class="rsvp-button">RSVP</a>
-    </div>
-
     <section id="schedule" class="info-section">
-      <h2>Wedding Schedule</h2>
+      <h2 class="heading">Wedding Schedule</h2>
       <p class="subtitle">
         Here's how the celebration unfolds ✨
       </p>
@@ -74,7 +114,10 @@
         <div class="timeline-item left">
           <div class="content">
             <h3>3:00 PM</h3>
-            <p><strong>Church Service</strong><br>St Theresa's Church</p>
+            <p><strong>Church Service</strong><br>St Theresa's Church, Thimbirigasyaya</p>
+          </div>
+          <div class="timeline-image">
+            <img src="assets/timeline-church.png">
           </div>
         </div>
 
@@ -83,12 +126,18 @@
             <h3>5:00 PM</h3>
             <p><strong>Refreshments</strong><br>Cinnamon Life at City of Dreams</p>
           </div>
+          <div class="timeline-image">
+            <img src="assets/timeline-refreshments.png">
+          </div>
         </div>
 
         <div class="timeline-item left">
           <div class="content">
             <h3>5:30 PM</h3>
             <p><strong>Poruwa Ceremony</strong><br>Cinnamon Life at City of Dreams</p>
+          </div>
+          <div class="timeline-image">
+            <img src="assets/timeline-poruwa.png">
           </div>
         </div>
 
@@ -97,12 +146,51 @@
             <h3>6:00 PM</h3>
             <p><strong>Wedding Reception</strong><br>Cinnamon Life at City of Dreams</p>
           </div>
+          <div class="timeline-image">
+            <img src="assets/timeline-reception.png">
+          </div>
         </div>
       </div>
     </section>
 
+    <section id="about" class="info-section">
+      <h2 class="heading">About The Wedding</h2>
+      <p class="subtitle">
+        We can't wait to celebrate with you ✨
+      </p>
+
+      <div class="content-block">
+        <h3 style="text-align: center;">The Church Service</h3>
+        <p>
+          Our wedding ceremony will take place at
+          <a target="_blank" href="https://maps.app.goo.gl/XvqhN7FoLFg5Fan87">St Theresa's Church, Thimbirigasyaya</a>,
+          where we will exchange our vows surrounded by family and friends.
+        </p>
+      </div>
+
+      <div class="content-block">
+        <h3 style="text-align: center;">The Poruwa Ceremony and Reception</h3>
+        <p>Following the church service, we will continue the celebration with a traditional Poruwa ceremony,
+          followed by dinner and dancing at the
+          <a target="_blank" href="https://maps.app.goo.gl/aCu8Se7XFovgVbmz7">Cumulus Ballroom, Cinnamon Life at the
+            City of Dreams</a>.
+      </div>
+
+      <div style="margin-top: 30px; display: flex; justify-content: center;">
+        <img class="wide-image" src="assets/location-path.png">
+      </div>
+      <div class="content-block">
+        <h3 style="text-align: center;">Dress code</h3>
+        <p>
+          The dress code for the day is formal attire.
+          Kindly reserve the colour white for the bride and purple for our bridal party.
+        </p>
+      </div>
+    </section>
+
+
     <section id="travel" class="info-section">
-      <h2>Travel</h2>
+      <h2 class="heading">Travel</h2>
       <p class="subtitle">
         We're so excited to welcome you to beautiful Sri Lanka
       </p>
@@ -117,7 +205,7 @@
           Most guests will require an Electronic Travel Authorisation (ETA) which can be applied and paid for online.
           Refer to the
           <a target="_blank" href="https://eta.gov.lk/slvisa/visainfo/center.jsp?locale=en_US">official website</a>
-          for more information
+          for more information.
         </p>
       </div>
 
@@ -126,50 +214,19 @@
         <p>We recommend using either Uber or the
           <a target="_blank"
             href="https://play.google.com/store/apps/details?id=com.pickme.passenger&hl=en_AU&pli=1">PickMe</a> app
-          to book car rides. Wait times are very short within Colombo
+          to book car rides. Wait times are very short within Colombo.
         </p>
       </div>
 
       <div class="content-block">
         <h3>Accommodation</h3>
         <p>
-          We suggest booking accommodation early in Colombo via AirBnB, booking.com or directly through the hotel
+          We suggest booking accommodation early in Colombo via AirBnB, booking.com or directly through the hotel.
         </p>
-    </section>
-
-    <section id="about" class="info-section">
-      <h2>About The Wedding</h2>
-      <p class="subtitle">
-        We can't wait to celebrate with you ✨
-      </p>
-
-      <div class="content-block">
-        <h3>The Church Service</h3>
-        <p>
-          The church service will take place at
-          <a target="_blank" href="https://maps.app.goo.gl/XvqhN7FoLFg5Fan87">St Theresa's Church, Thimbirigasyaya</a>.
-        </p>
-        <!-- Add diagram from ranli here -->
-      </div>
-
-      <div class="content-block">
-        <h3>The Poruwa Ceremony and Reception</h3>
-        <p>After the service, we will have a Poruwa ceremony and reception at the Cumulus Ballroom in
-          <a target="_blank" href="https://maps.app.goo.gl/aCu8Se7XFovgVbmz7">Cinnamon Life at the City of Dreams</a>
-          <!-- Add diagram from ranli here -->
-      </div>
-
-      <div class="content-block">
-        <h3>Dress code</h3>
-        <p>
-          The dress code is formal attire. We request that you reserve the colour white for the Bride and the colour
-          purple for our bridal party
-        </p>
-      </div>
     </section>
 
     <section id="todo" class="info-section">
-      <h2>Things To Do</h2>
+      <h2 class="heading">Things To Do</h2>
       <p class="subtitle">
         Make a holiday of it, Sri Lanka has so much to explore
       </p>
@@ -232,7 +289,7 @@
     </section>
 
     <section id="faq" class="info-section">
-      <h2>Questions & Answers</h2>
+      <h2 class="heading">Questions & Answers</h2>
       <p class="subtitle">
         Everything you might be wondering ✨
       </p>
@@ -240,14 +297,17 @@
       <div class="content-block">
         <h3>What is the dress code?</h3>
         <p>
-          TBD <!-- moodboard link from ranli? -->
+          The dress code for the day is formal attire.
+          Kindly reserve the colour white for the bride and purple for our bridal party.
         </p>
       </div>
 
       <div class="content-block">
         <h3>Can I bring a plus-one?</h3>
         <p>
-          Please refer to your invitation for the number of guests reserved in your honour.
+          Unfortunately we are only extending our invitation to whoever is listed in the written invitation.
+          However, please feel free to contact Kevin or Ranli prior to the RSVP date to see if something can arranged,
+          or if there's any issues.
         </p>
       </div>
 
@@ -255,7 +315,9 @@
         <h3>Do I need a visa for Sri Lanka?</h3>
         <p>
           Most international guests will require an Electronic Travel Authorization (ETA).
-          Please check official Sri Lankan immigration guidelines based on your passport.
+          Please check
+          <a target="_blank" href="https://eta.gov.lk/slvisa/visainfo/center.jsp?locale=en_US">official</a>
+          Sri Lankan immigration guidelines based on your passport.
         </p>
       </div>
 
@@ -273,7 +335,7 @@
   </section>
 
   <div style="margin-top: 50px; display: flex; justify-content: center;">
-    <img class="image-mobile-scale" src="assets/kevin-and-ranli-drawing.png" style="height: auto;">
+    <img class="image-scaled" src="assets/kevin-and-ranli-drawing.png">
   </div>
 
   <div style="margin: 0 auto; width: auto; text-align: center; font-size: 30px">
