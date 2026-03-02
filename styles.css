@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Lorestta'; /* set name */
+  font-family: 'Lorestta';
   src: url("assets/fonts/Lorestta.otf") format("opentype"),
 }
 
@@ -321,3 +321,4 @@ a { color: #777; }
 /* * { // Useful for troubleshooting
   outline: 1px solid red;
 } */
+ 
